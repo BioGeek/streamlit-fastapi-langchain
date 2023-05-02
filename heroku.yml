@@ -1,0 +1,7 @@
+build:
+  docker:
+    web: frontend/Dockerfile
+    api: backend/Dockerfile
+
+run:
+  web: sh setup.sh && streamlit run streamlit_app.py
