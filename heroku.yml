@@ -5,3 +5,4 @@ build:
 
 run:
   web: sh setup.sh && streamlit run streamlit_app.py
+  api: uvicorn api:app --host 0.0.0.0 --port 8080
